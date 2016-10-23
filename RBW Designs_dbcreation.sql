@@ -29,7 +29,7 @@ CREATE TABLE Product(
   ProductTypeID bigint NOT NULL,
   MaterialID bigint NOT NULL,
   Name varchar(50) NOT NULL,
-  UnitPrice float NOT NULL,
+  UnitPrice money NOT NULL,
   Color varchar(50) NOT NULL);
 
   CREATE TABLE Sales(
@@ -39,7 +39,7 @@ CREATE TABLE Product(
   EmployeeID bigint NOT NULL,
   CustomerID bigint NOT NULL,
   OrderQty integer NOT NULL,
-  TotalDue float NOT NULL,
+  TotalDue money NOT NULL,
   OnlineSale binary NOT NULL,
   ProductID bigint NOT NULL);
 
